@@ -1,0 +1,39 @@
+---
+import ProjectsGrid from '@components/ProjectsGrid.astro'
+import Layout from '@layout/Layout.astro'
+
+const projects = [
+  {
+    name: 'lilabaum',
+    description: 'tbd',
+    link: 'https://lilabaum.de',
+  },
+  {
+    name: 'gerrit.tech',
+    description: 'tbd ',
+    link: 'https://gerrit.tech',
+  },
+]
+---
+
+<Layout
+  pageTitle="Projects"
+  description="Projects I've worked on over the years and I'm currently working on."
+  type="content"
+>
+  <main class="px-8 pt-16 mx-auto max-w-6xl sm:pt-24 lg:px-16">
+    <div class="flex flex-col mt-4 space-y-8">
+      <div class="flex flex-col space-y-4">
+        <h1
+          class="text-4xl font-bold tracking-tighter sm:text-5xl max-w-[25ch]"
+        >
+          Projects I've worked on over the years and I'm currently working on
+        </h1>
+
+        <p class="text-primary-300 max-w-[65ch]">tbd</p>
+      </div>
+
+      <ProjectsGrid projects={projects} />
+    </div>
+  </main>
+</Layout>
