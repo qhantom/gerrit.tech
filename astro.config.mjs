@@ -7,10 +7,7 @@ import tailwind from '@astrojs/tailwind'
 import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
-import prefetch from '@astrojs/prefetch'
-
-// https://astro.build/config
 export default defineConfig({
   site: 'https://gerrit.tech',
-  integrations: [tailwind(), sitemap(), prefetch({ throttle: 3 })],
+  integrations: [tailwind(), sitemap()],
 })

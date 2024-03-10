@@ -32,7 +32,7 @@ const { date, readTime, title, description, tags, url } = Astro.props
       <ul class="flex flex-row flex-wrap gap-2">
         {tags.map(tag => <Tag>{tag}</Tag>)}
       </ul>
-      <HighlightedLink href={url}>Read more ›</HighlightedLink>
+      <HighlightedLink href={url} data-astro-prefetch>Read more ›</HighlightedLink>
     </div>
   </article>
 </div>
